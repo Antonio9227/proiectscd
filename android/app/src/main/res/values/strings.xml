@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Track me please</string>
+    <string name="tab_text_1">Locations</string>
+    <string name="tab_text_2">Settings</string>
+</resources>

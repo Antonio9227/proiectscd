@@ -3,6 +3,7 @@ package com.anto.gpstrack.entities;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,10 +14,12 @@ import java.util.UUID;
 @Builder
 @Data
 @AllArgsConstructor
+@RequiredArgsConstructor
 public class Phone {
     @Id
     @GeneratedValue
     private UUID uuid;
 
-    private String imei;
+    // should have been imei but android doesn't really like giving that away anymore
+    private String uniqueId;
 }

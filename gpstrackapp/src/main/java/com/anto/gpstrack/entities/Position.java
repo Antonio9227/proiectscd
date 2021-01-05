@@ -2,6 +2,8 @@ package com.anto.gpstrack.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 
@@ -9,6 +11,8 @@ import javax.persistence.*;
 @Entity
 @Builder
 @AllArgsConstructor
+@RequiredArgsConstructor
+@Data
 public class Position {
     @Id
     @GeneratedValue

@@ -1,0 +1,334 @@
+@startuml
+
+title __DTO's Class Diagram__\n
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.DeletePhoneDto {
+          - imei : String
+          - uuid : UUID
+          + DeletePhoneDto()
+          + equals()
+          + getImei()
+          + getUuid()
+          + hashCode()
+          + setImei()
+          + setUuid()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.GetPositionsDto {
+          - resourceID : UUID
+          - timestampEnd : long
+          - timestampStart : long
+          - token : UUID
+          + GetPositionsDto()
+          + GetPositionsDto()
+          {static} + builder()
+          + equals()
+          + getResourceID()
+          + getTimestampEnd()
+          + getTimestampStart()
+          + getToken()
+          + hashCode()
+          + setResourceID()
+          + setTimestampEnd()
+          + setTimestampStart()
+          + setToken()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.GetPositionsDto.GetPositionsDtoBuilder {
+          - resourceID : UUID
+          - timestampEnd : long
+          - timestampStart : long
+          - token : UUID
+          + build()
+          + resourceID()
+          + timestampEnd()
+          + timestampStart()
+          + toString()
+          + token()
+          ~ GetPositionsDtoBuilder()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.LoginDto {
+          - password : String
+          - username : String
+          + LoginDto()
+          + LoginDto()
+          {static} + builder()
+          + equals()
+          + getPassword()
+          + getUsername()
+          + hashCode()
+          + setPassword()
+          + setUsername()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.LoginDto.LoginDtoBuilder {
+          - password : String
+          - username : String
+          + build()
+          + password()
+          + toString()
+          + username()
+          ~ LoginDtoBuilder()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.PositionDto {
+          - latitude : double
+          - longitude : double
+          - phoneId : UUID
+          + PositionDto()
+          + PositionDto()
+          {static} + builder()
+          + equals()
+          + getLatitude()
+          + getLongitude()
+          + getPhoneId()
+          + hashCode()
+          + setLatitude()
+          + setLongitude()
+          + setPhoneId()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.PositionDto.PositionDtoBuilder {
+          - latitude : double
+          - longitude : double
+          - phoneId : UUID
+          + build()
+          + latitude()
+          + longitude()
+          + phoneId()
+          + toString()
+          ~ PositionDtoBuilder()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.RegisterPhoneDto {
+          - imei : String
+          + RegisterPhoneDto()
+          + RegisterPhoneDto()
+          {static} + builder()
+          + equals()
+          + getImei()
+          + hashCode()
+          + setImei()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.RegisterPhoneDto.RegisterPhoneDtoBuilder {
+          - imei : String
+          + build()
+          + imei()
+          + toString()
+          ~ RegisterPhoneDtoBuilder()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.RegisterPhoneResponseDto {
+          - uuid : UUID
+          + RegisterPhoneResponseDto()
+          + RegisterPhoneResponseDto()
+          {static} + builder()
+          + equals()
+          + getUuid()
+          + hashCode()
+          + setUuid()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.RegisterPhoneResponseDto.RegisterPhoneResponseDtoBuilder {
+          - uuid : UUID
+          + build()
+          + toString()
+          + uuid()
+          ~ RegisterPhoneResponseDtoBuilder()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.RequestAccessTokenDto {
+          - imei : String
+          - uuid : UUID
+          + RequestAccessTokenDto()
+          + RequestAccessTokenDto()
+          {static} + builder()
+          + equals()
+          + getImei()
+          + getUuid()
+          + hashCode()
+          + setImei()
+          + setUuid()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.RequestAccessTokenDto.RequestAccessTokenDtoBuilder {
+          - imei : String
+          - uuid : UUID
+          + build()
+          + imei()
+          + toString()
+          + uuid()
+          ~ RequestAccessTokenDtoBuilder()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.RequestAccessTokenResponseDto {
+          - isAdmin : boolean
+          - token : UUID
+          + RequestAccessTokenResponseDto()
+          + RequestAccessTokenResponseDto()
+          {static} + builder()
+          + equals()
+          + getToken()
+          + hashCode()
+          + isAdmin()
+          + setAdmin()
+          + setToken()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.RequestAccessTokenResponseDto.RequestAccessTokenResponseDtoBuilder {
+          - isAdmin : boolean
+          - token : UUID
+          + build()
+          + isAdmin()
+          + toString()
+          + token()
+          ~ RequestAccessTokenResponseDtoBuilder()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.ValidateTokenDto {
+          - resourceId : UUID
+          - token : UUID
+          + ValidateTokenDto()
+          + ValidateTokenDto()
+          {static} + builder()
+          + equals()
+          + getResourceId()
+          + getToken()
+          + hashCode()
+          + setResourceId()
+          + setToken()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.anto.gpstrack {
+    namespace dto {
+      class com.anto.gpstrack.dto.ValidateTokenDto.ValidateTokenDtoBuilder {
+          - resourceId : UUID
+          - token : UUID
+          + build()
+          + resourceId()
+          + toString()
+          + token()
+          ~ ValidateTokenDtoBuilder()
+      }
+    }
+  }
+  
+
+  com.anto.gpstrack.dto.GetPositionsDto +-down- com.anto.gpstrack.dto.GetPositionsDto.GetPositionsDtoBuilder
+  com.anto.gpstrack.dto.LoginDto +-down- com.anto.gpstrack.dto.LoginDto.LoginDtoBuilder
+  com.anto.gpstrack.dto.PositionDto +-down- com.anto.gpstrack.dto.PositionDto.PositionDtoBuilder
+  com.anto.gpstrack.dto.RegisterPhoneDto +-down- com.anto.gpstrack.dto.RegisterPhoneDto.RegisterPhoneDtoBuilder
+  com.anto.gpstrack.dto.RegisterPhoneResponseDto +-down- com.anto.gpstrack.dto.RegisterPhoneResponseDto.RegisterPhoneResponseDtoBuilder
+  com.anto.gpstrack.dto.RequestAccessTokenDto +-down- com.anto.gpstrack.dto.RequestAccessTokenDto.RequestAccessTokenDtoBuilder
+  com.anto.gpstrack.dto.RequestAccessTokenResponseDto +-down- com.anto.gpstrack.dto.RequestAccessTokenResponseDto.RequestAccessTokenResponseDtoBuilder
+  com.anto.gpstrack.dto.ValidateTokenDto +-down- com.anto.gpstrack.dto.ValidateTokenDto.ValidateTokenDtoBuilder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
